@@ -11,7 +11,7 @@ public class BankOperator {
 		Customer c1 = new Customer(new CustomerLoanCalculator());
 		c1.setPrincipalAmount(100);
 		c1.setTimePeriod(10);
-		System.out.println("Loan amount for a customer with P=100 and t=10 is " + String.valueOf(c1.getLoanAmount()));
+		System.out.println("Loan amount for a customer with P=100 and t=10 is : " + String.valueOf(c1.getLoanAmount()));
 	}
 
 }
