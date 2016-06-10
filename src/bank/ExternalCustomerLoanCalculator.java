@@ -1,6 +1,6 @@
 package bank;
 
-public class CustomerLoanCalculator implements LoanCalculator {
+public class ExternalCustomerLoanCalculator implements LoanCalculator {
 	
 	private final double rateOfInterest = 10;
 

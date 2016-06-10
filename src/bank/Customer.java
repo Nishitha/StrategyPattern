@@ -4,15 +4,18 @@ public class Customer {
 	
 	private LoanCalculator loanCalculator;
 	private double principalAmount;
-	private double timePeriod;
+	private double loanPeriod = 0;
 	
 	public Customer(LoanCalculator loanCalculator) {
 		this.loanCalculator = loanCalculator;
+		
 	}
 	
+
 	public double getPrincipalAmount() {
 		return principalAmount;
 	}
+
 
 
 
@@ -22,20 +25,21 @@ public class Customer {
 
 
 
-	public double getTimePeriod() {
-		return timePeriod;
+
+	public double getLoanPeriod() {
+		return loanPeriod;
 	}
 
 
-
-	public void setTimePeriod(double timePeriod) {
-		this.timePeriod = timePeriod;
+	public void setLoanPeriod(double loanPeriod) {
+		this.loanPeriod = loanPeriod;
 	}
+
 
 
 
 	public double getLoanAmount(){
-		return this.loanCalculator.calculateLoan(this.principalAmount, this.timePeriod);
+		return this.loanCalculator.calculateLoan(this.principalAmount, this.loanPeriod);
 	}
 	
 	
